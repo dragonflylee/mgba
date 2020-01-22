@@ -28,6 +28,7 @@ struct GUIFont* GUIFontCreate(void) {
 	}
 	C3D_Tex* tex;
 
+	//guiFont->font = fontGetSystemFont();
 	guiFont->font = fontGetSystemFont();
 	TGLP_s* glyphInfo = fontGetGlyphInfo(guiFont->font);
 	guiFont->size = FONT_SIZE / glyphInfo->cellHeight;
